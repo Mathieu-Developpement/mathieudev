@@ -122,7 +122,7 @@ export default function Pricing() {
             </h3>
             <p className="text-[#aaa] text-lg mb-8 max-w-xl mx-auto">
               Tu peux lancer ton projet sans investissement initial. L&apos;abonnement
-              mensuel ne démarre que quand tu es prêt — et satisfait.
+              mensuel ne démarre que quand tu es prêt et satisfait!
             </p>
 
             {/* Perks */}
@@ -145,7 +145,7 @@ export default function Pricing() {
                 background: "linear-gradient(135deg, #0055bb 0%, #00aaff 100%)",
               }}
             >
-              Je veux lancer mon projet — gratuitement →
+              Je veux lancer mon projet gratuitement →
             </a>
           </div>
         </div>

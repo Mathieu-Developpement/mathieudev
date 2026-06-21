@@ -64,7 +64,7 @@ export default function About() {
 
             <div className="flex flex-col gap-4 text-[#999] text-base leading-relaxed">
               <p>
-                Je n&apos;ai pas de diplôme en informatique — j&apos;ai appris
+                Je n&apos;ai pas de diplôme en informatique, j&apos;ai appris
                 en ligne, par moi-même, en construisant de vrais projets
                 plutôt qu&apos;en suivant un programme. Tout a commencé il y a
                 plus de 10 ans avec un petit jeu 2D, simplement pour
