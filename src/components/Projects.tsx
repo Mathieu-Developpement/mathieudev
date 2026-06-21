@@ -56,7 +56,7 @@ export default function Projects() {
             Mes <span className="gradient-text">projets</span>
           </h2>
           <p className="text-[#888] text-lg max-w-xl mx-auto">
-            Des produits réels, fonctionnels, déployés. Pas des maquettes — des
+            Des produits réels, fonctionnels, déployés. Pas des maquettes, des
             applications que des gens utilisent.
           </p>
         </div>

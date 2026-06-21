@@ -72,21 +72,21 @@ export default function About() {
               </p>
               <p>
                 J&apos;ai repris avec deux boutiques
-                Shopify (Tendance Express et Onyx), aujourd&apos;hui fermées
-                — mais qui m&apos;ont appris l&apos;essentiel : optimisation
+                Shopify (Tendance Express et Onyx), aujourd&apos;hui fermées,
+                mais qui m&apos;ont appris l&apos;essentiel : optimisation
                 SEO, structure d&apos;une boutique en ligne, commerce
                 international et logistique. Chaque projet, même terminé,
                 m&apos;a rendu meilleur pour le suivant.
               </p>
               <p>
-                Ça m&apos;a mené à PattesQC, mon premier vrai SaaS — un projet
+                Ça m&apos;a mené à PattesQC, mon premier vrai SaaS, un projet
                 personnel que j&apos;ai volontairement gardé hors des stores
                 Android et Apple pour me concentrer sur une chose : lancer
                 MathieuDev sérieusement.
               </p>
               <p className="text-white font-medium">
                 Aujourd&apos;hui, je mets cette expérience à ton service : pas
-                de jargon, pas de promesses vides — juste quelqu&apos;un qui
+                de jargon, pas de promesses vides. Juste quelqu&apos;un qui
                 sait construire, parce qu&apos;il a appris en construisant.
               </p>
             </div>

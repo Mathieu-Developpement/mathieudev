@@ -217,7 +217,7 @@ export default function Reviews() {
             <span className="gradient-text">mes clients</span>
           </h2>
           <p className="text-[#888] text-lg max-w-xl mx-auto">
-            Des gens qui ont pris le risque zéro — et qui ne l&apos;ont pas regretté.
+            Des gens qui ont pris le risque zéro et qui ne l&apos;ont pas regretté.
           </p>
         </div>
 

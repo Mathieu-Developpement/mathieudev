@@ -58,7 +58,7 @@ export default function Pricing() {
           <p className="text-[#888] text-lg max-w-2xl mx-auto">
             Mon modèle est simple : je construis d&apos;abord, tu paies ensuite seulement
             si le produit te convient. C&apos;est moi qui redouble d&apos;effort pour que tu
-            restes — pas toi qui prends un risque.
+            restes, pas toi qui prends un risque.
           </p>
         </div>
 

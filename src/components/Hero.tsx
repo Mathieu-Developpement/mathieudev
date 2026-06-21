@@ -132,7 +132,7 @@ export default function Hero() {
             Je construis des <strong className="text-white">sites web</strong>,{" "}
             <strong className="text-white">logiciels</strong>,{" "}
             <strong className="text-white">applications</strong> et des{" "}
-            <strong className="text-white">systèmes IA</strong> sur mesure —
+            <strong className="text-white">systèmes IA</strong> sur mesure,
             sans frais de développement.{" "}
             <span className="text-[#00aaff]">Tu paies seulement si t&apos;es satisfait.</span>
           </p>
