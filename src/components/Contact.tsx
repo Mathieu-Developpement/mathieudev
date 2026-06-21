@@ -105,7 +105,7 @@ export default function Contact() {
                 <span className="gradient-text">d&apos;exister.</span>
               </h2>
               <p className="text-[#888] text-lg leading-relaxed">
-                Tu as une idée? Un problème à résoudre? Un business à lancer? Écris-moi —
+                Tu as une idée? Un problème à résoudre? Un business à lancer? Écris-moi,
                 c&apos;est gratuit, sans engagement, et la première conversation change
                 souvent tout.
               </p>

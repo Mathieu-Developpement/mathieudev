@@ -7,22 +7,22 @@ const faqs = [
   {
     question: "Comment fonctionne le modèle sans frais de développement ?",
     answer:
-      "Tu ne paies rien pour la conception ni le développement de ton projet. Seulement un abonnement mensuel une fois le produit livré et fonctionnel. Si ça ne répond pas à tes attentes, tu n'as qu'à ne pas t'abonner — aucune facture, aucun engagement.",
+      "Tu ne paies rien pour la conception ni le développement de ton projet. Seulement un abonnement mensuel une fois le produit livré et fonctionnel. Si ça ne répond pas à tes attentes, tu n'as qu'à ne pas t'abonner, aucune facture, aucun engagement.",
   },
   {
     question: "Combien de temps ça prend pour avoir mon projet ?",
     answer:
-      "Pour un projet simple (site vitrine, par exemple), compte 1 à 2 semaines. Les projets plus complexes (SaaS, intégration IA, applications) prennent plus de temps selon les fonctionnalités demandées — on en discute ensemble dès le premier échange.",
+      "Pour un projet simple (site vitrine, par exemple), compte 1 à 2 semaines. Les projets plus complexes (SaaS, intégration IA, applications) prennent plus de temps selon les fonctionnalités demandées. On en discute ensemble dès le premier échange.",
   },
   {
     question: "Puis-je annuler mon abonnement en tout temps ?",
     answer:
-      "Oui, sans pénalité ni préavis. Si le service ne te convient plus, tu arrêtes simplement de payer — c'est aussi simple que ça.",
+      "Oui, sans pénalité ni préavis. Si le service ne te convient plus, tu arrêtes simplement de payer, c'est aussi simple que ça.",
   },
   {
     question: "Quels types de projets acceptes-tu ?",
     answer:
-      "Pratiquement tous : sites web, logiciels, applications, SaaS, intégrations IA — peu importe la taille ou le budget de départ. La seule exception, ce sont les très gros projets gouvernementaux ou d'institutions majeures, qui demandent une structure différente de la mienne.",
+      "Pratiquement tous : sites web, logiciels, applications, SaaS, intégrations IA, peu importe la taille ou le budget de départ. La seule exception, ce sont les très gros projets gouvernementaux ou d'institutions majeures, qui demandent une structure différente de la mienne.",
   },
 ];
 

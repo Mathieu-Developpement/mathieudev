@@ -7,7 +7,7 @@ const services = [
     icon: Globe,
     title: "Sites Web",
     description:
-      "Landing pages, sites vitrines, plateformes e-commerce et portails web — conçus pour convertir et performants sur tous les appareils.",
+      "Landing pages, sites vitrines, plateformes e-commerce et portails web, conçus pour convertir et performants sur tous les appareils.",
     tags: ["Next.js", "React", "Vercel"],
   },
   {
@@ -69,7 +69,7 @@ export default function Services() {
             Mes <span className="gradient-text">services</span>
           </h2>
           <p className="text-[#888] text-lg max-w-xl mx-auto">
-            Du simple site vitrine à la plateforme IA complexe — je m&apos;occupe de tout,
+            Du simple site vitrine à la plateforme IA complexe, je m&apos;occupe de tout,
             de la conception au déploiement.
           </p>
         </div>
