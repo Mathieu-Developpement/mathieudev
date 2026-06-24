@@ -15,10 +15,11 @@ const projects = [
     statusColor: "#00aaff",
     cta: {
       label: "Télécharger l'app",
-      href: "https://drive.google.com/file/d/14vnly7NwYmCB4QHmC7dpRu_pkrf9SC9K/view?usp=drive_link",
+      href: "https://drive.google.com/file/d/1LPf0GBHtHJtgevb1z0IyvgZ770rk90qt/view?usp=drive_link",
       icon: Download,
       note: "APK Android — installation directe",
     },
+    webHref: "https://pattesqc.vercel.app/",
     gradient: "from-[#001a3a] to-[#0a0a0a]",
     accentColor: "#0066cc",
   },
@@ -37,6 +38,7 @@ const projects = [
       icon: Globe,
       note: "organix-beryl.vercel.app",
     },
+    webHref: null,
     gradient: "from-[#001a1a] to-[#0a0a0a]",
     accentColor: "#00aaaa",
   },
@@ -44,7 +46,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projets" className="relative pt-8 pb-16">
+    <section id="projets" className="relative py-28">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
@@ -56,7 +58,7 @@ export default function Projects() {
             Mes <span className="gradient-text">projets</span>
           </h2>
           <p className="text-[#888] text-lg max-w-xl mx-auto">
-            Des produits réels, fonctionnels, déployés. Pas des maquettes, des
+            Des produits réels, fonctionnels, déployés. Pas des maquettes — des
             applications que des gens utilisent.
           </p>
         </div>
@@ -141,21 +143,34 @@ export default function Projects() {
                   </div>
 
                   {/* CTA */}
-                  <div>
-                    <a
-                      href={project.cta.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-bold text-white transition-all duration-300 hover:scale-105"
-                      style={{
-                        background: `linear-gradient(135deg, ${project.accentColor} 0%, #00aaff 100%)`,
-                      }}
-                    >
-                      <CtaIcon size={16} />
-                      {project.cta.label}
-                      <ExternalLink size={13} className="opacity-70" />
-                    </a>
-                    <p className="text-xs text-[#555] mt-2 ml-1 font-mono">
+                  <div className="flex flex-col gap-3">
+                    <div className="flex flex-wrap items-center gap-3">
+                      <a
+                        href={project.cta.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-bold text-white transition-all duration-300 hover:scale-105"
+                        style={{
+                          background: `linear-gradient(135deg, ${project.accentColor} 0%, #00aaff 100%)`,
+                        }}
+                      >
+                        <CtaIcon size={16} />
+                        {project.cta.label}
+                        <ExternalLink size={13} className="opacity-70" />
+                      </a>
+                      {project.webHref && (
+                        <a
+                          href={project.webHref}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 px-4 py-3 rounded-lg text-sm font-semibold text-[#00aaff] border border-[rgba(0,170,255,0.3)] hover:border-[rgba(0,170,255,0.7)] hover:bg-[rgba(0,170,255,0.05)] transition-all duration-300"
+                        >
+                          <Globe size={14} />
+                          Version web
+                        </a>
+                      )}
+                    </div>
+                    <p className="text-xs text-[#555] ml-1 font-mono">
                       {project.cta.note}
                     </p>
                   </div>

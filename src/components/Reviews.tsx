@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { supabase, type Review } from "@/lib/supabase";
 import { Star, Send, User } from "lucide-react";
 
@@ -144,17 +144,37 @@ export default function Reviews() {
     return () => clearInterval(interval);
   }, [cooldown]);
 
+  const hasLoaded = useRef(false);
   useEffect(() => {
-    loadReviews();
+    if (!hasLoaded.current) {
+      hasLoaded.current = true;
+      loadReviews();
+    }
   }, []);
 
-  const loadReviews = async () => {
+  const loadReviews = async (force = false) => {
     try {
+      const CACHE_KEY = "md_reviews_cache";
+      const CACHE_TTL = 1000 * 60 * 10; // 10 minutes
+      if (!force) {
+        const cached = sessionStorage.getItem(CACHE_KEY);
+        if (cached) {
+          const { data, ts } = JSON.parse(cached);
+          if (Date.now() - ts < CACHE_TTL) {
+            setRealReviews(data);
+            return;
+          }
+        }
+      }
       const { data } = await supabase
         .from("reviews")
         .select("*")
-        .order("created_at", { ascending: false });
-      if (data) setRealReviews(data);
+        .order("created_at", { ascending: false })
+        .limit(20);
+      if (data) {
+        setRealReviews(data);
+        sessionStorage.setItem(CACHE_KEY, JSON.stringify({ data, ts: Date.now() }));
+      }
     } catch {
       // Supabase not configured yet — silently ignore
     }
@@ -181,7 +201,7 @@ export default function Reviews() {
         },
       ]);
       setSubmitted(true);
-      loadReviews();
+      loadReviews(true);
       localStorage.setItem("review_last_sent", Date.now().toString());
       setCooldown(60 * 60);
     } catch {
