@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ExternalLink, Download, Globe } from "lucide-react";
+import { ExternalLink, Download, Globe, Lock } from "lucide-react";
 
 const projects = [
   {
@@ -20,6 +20,7 @@ const projects = [
       note: "APK Android — installation directe",
     },
     webHref: "https://pattesqc.vercel.app/",
+    maintenance: true,
     gradient: "from-[#001a3a] to-[#0a0a0a]",
     accentColor: "#0066cc",
   },
@@ -39,6 +40,7 @@ const projects = [
       note: "organix-beryl.vercel.app",
     },
     webHref: null,
+    maintenance: false,
     gradient: "from-[#001a1a] to-[#0a0a0a]",
     accentColor: "#00aaaa",
   },
@@ -95,8 +97,8 @@ export default function Projects() {
                 {/* Content */}
                 <div className="flex-1 p-8 flex flex-col justify-between gap-5">
                   <div>
-                    {/* Status badge */}
-                    <div className="flex items-center gap-3 mb-3">
+                    {/* Status badges */}
+                    <div className="flex flex-wrap items-center gap-3 mb-3">
                       <span
                         className="inline-flex items-center gap-1.5 text-xs font-mono px-3 py-1 rounded-full"
                         style={{
@@ -111,6 +113,11 @@ export default function Projects() {
                         />
                         {project.status}
                       </span>
+                      {project.maintenance && (
+                        <span className="inline-flex items-center gap-1.5 text-xs font-mono px-3 py-1 rounded-full text-orange-400 bg-orange-400/10 border border-orange-400/30">
+                          🔧 En maintenance
+                        </span>
+                      )}
                     </div>
 
                     <h3
@@ -145,30 +152,73 @@ export default function Projects() {
                   {/* CTA */}
                   <div className="flex flex-col gap-3">
                     <div className="flex flex-wrap items-center gap-3">
-                      <a
-                        href={project.cta.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-bold text-white transition-all duration-300 hover:scale-105"
-                        style={{
-                          background: `linear-gradient(135deg, ${project.accentColor} 0%, #00aaff 100%)`,
-                        }}
-                      >
-                        <CtaIcon size={16} />
-                        {project.cta.label}
-                        <ExternalLink size={13} className="opacity-70" />
-                      </a>
-                      {project.webHref && (
-                        <a
-                          href={project.webHref}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 px-4 py-3 rounded-lg text-sm font-semibold text-[#00aaff] border border-[rgba(0,170,255,0.3)] hover:border-[rgba(0,170,255,0.7)] hover:bg-[rgba(0,170,255,0.05)] transition-all duration-300"
-                        >
-                          <Globe size={14} />
-                          Version web
-                        </a>
+
+                      {/* Bouton principal */}
+                      <div className="relative group/btn">
+                        {project.maintenance ? (
+                          <button
+                            disabled
+                            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-bold text-white opacity-40 cursor-not-allowed grayscale"
+                            style={{
+                              background: `linear-gradient(135deg, ${project.accentColor} 0%, #00aaff 100%)`,
+                            }}
+                          >
+                            <Lock size={16} />
+                            {project.cta.label}
+                            <Lock size={13} className="opacity-70" />
+                          </button>
+                        ) : (
+                          <a
+                            href={project.cta.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-bold text-white transition-all duration-300 hover:scale-105"
+                            style={{
+                              background: `linear-gradient(135deg, ${project.accentColor} 0%, #00aaff 100%)`,
+                            }}
+                          >
+                            <CtaIcon size={16} />
+                            {project.cta.label}
+                            <ExternalLink size={13} className="opacity-70" />
+                          </a>
+                        )}
+                        {project.maintenance && (
+                          <div className="absolute -top-9 left-1/2 -translate-x-1/2 bg-[#1a1a1a] text-orange-400 text-xs px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover/btn:opacity-100 transition-opacity border border-orange-400/20 pointer-events-none">
+                            Indisponible — en maintenance
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Bouton version web */}
+                      {project.webHref !== null && (
+                        <div className="relative group/web">
+                          {project.maintenance ? (
+                            <button
+                              disabled
+                              className="inline-flex items-center gap-1.5 px-4 py-3 rounded-lg text-sm font-semibold opacity-40 cursor-not-allowed grayscale text-[#666] border border-[rgba(255,255,255,0.08)]"
+                            >
+                              <Lock size={14} />
+                              Version web
+                            </button>
+                          ) : (
+                            <a
+                              href={project.webHref!}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 px-4 py-3 rounded-lg text-sm font-semibold text-[#00aaff] border border-[rgba(0,170,255,0.3)] hover:border-[rgba(0,170,255,0.7)] hover:bg-[rgba(0,170,255,0.05)] transition-all duration-300"
+                            >
+                              <Globe size={14} />
+                              Version web
+                            </a>
+                          )}
+                          {project.maintenance && (
+                            <div className="absolute -top-9 left-1/2 -translate-x-1/2 bg-[#1a1a1a] text-orange-400 text-xs px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover/web:opacity-100 transition-opacity border border-orange-400/20 pointer-events-none">
+                              Indisponible — en maintenance
+                            </div>
+                          )}
+                        </div>
                       )}
+
                     </div>
                     <p className="text-xs text-[#555] ml-1 font-mono">
                       {project.cta.note}
