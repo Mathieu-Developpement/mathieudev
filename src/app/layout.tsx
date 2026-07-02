@@ -70,6 +70,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://mathieudev.vercel.app",
   },
+  verification: {
+    google: "BzJXKCeDO6M0u2Fw7dlwzcX0R57Mkj2KKYdYUAYeu5I",
+  },
   robots: {
     index: true,
     follow: true,
