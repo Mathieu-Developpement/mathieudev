@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Facebook } from "lucide-react";
 
 const links = [
   { label: "Services", href: "#services" },
@@ -11,11 +10,10 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[rgba(0,170,255,0.08)] py-12 bg-[#080808]">
+    <footer className="border-t border-[rgba(0,170,255,0.08)] py-12 bg-[#080808]" role="contentinfo">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-          {/* Logo */}
-          <a href="#hero" className="opacity-80 hover:opacity-100 transition-opacity">
+          <a href="#hero" className="opacity-80 hover:opacity-100 transition-opacity" aria-label="MathieuDev — retour en haut de page">
             <Image
               src="/images/logo.png"
               alt="MathieuDev"
@@ -25,42 +23,37 @@ export default function Footer() {
             />
           </a>
 
-          {/* Nav */}
-          <nav className="flex flex-wrap justify-center gap-6">
-            {links.map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
-                className="text-sm text-[#555] hover:text-[#00aaff] transition-colors"
-              >
-                {l.label}
-              </a>
-            ))}
+          <nav aria-label="Navigation pied de page">
+            <ul className="flex flex-wrap justify-center gap-6 list-none">
+              {links.map((l) => (
+                <li key={l.href}>
+                  <a
+                    href={l.href}
+                    className="text-sm text-[#888] hover:text-[#00aaff] transition-colors"
+                    aria-label={`Aller à la section ${l.label}`}
+                  >
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </nav>
 
-          {/* Email + Social */}
-          <div className="flex items-center gap-5">
-            <a
-              href="mailto:mathieu.dev@hotmail.com"
-              className="text-sm text-[#555] hover:text-[#00aaff] transition-colors font-mono"
-            >
-              mathieu.dev@hotmail.com
-            </a>
-            <a
-              href="https://www.facebook.com/share/192JfSa5sP/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Page Facebook MathieuDev"
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-[rgba(0,170,255,0.1)] border border-[rgba(0,170,255,0.25)] text-[#00aaff] hover:bg-[rgba(0,170,255,0.2)] hover:scale-110 transition-all duration-300"
-            >
-              <Facebook size={20} />
-            </a>
-          </div>
+          <a
+            href="mailto:mathieu.dev@hotmail.com"
+            className="text-sm text-[#888] hover:text-[#00aaff] transition-colors font-mono"
+            aria-label="Envoyer un courriel à mathieu.dev@hotmail.com"
+          >
+            mathieu.dev@hotmail.com
+          </a>
         </div>
 
-        <div className="mt-8 pt-6 border-t border-[rgba(255,255,255,0.04)] flex items-center justify-center">
-          <p className="text-xs text-[#333]">
+        <div className="mt-8 pt-6 border-t border-[rgba(255,255,255,0.04)] flex flex-col md:flex-row items-center justify-between gap-3">
+          <p className="text-xs text-[#777]">
             © {new Date().getFullYear()} MathieuDev. Tous droits réservés.
+          </p>
+          <p className="text-xs text-[#777] font-mono">
+            Construit avec Next.js · Hébergé sur Vercel
           </p>
         </div>
       </div>

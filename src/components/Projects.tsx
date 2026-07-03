@@ -220,7 +220,7 @@ export default function Projects() {
                       )}
 
                     </div>
-                    <p className="text-xs text-[#555] ml-1 font-mono">
+                    <p className="text-xs text-[#888] ml-1 font-mono">
                       {project.cta.note}
                     </p>
                   </div>
