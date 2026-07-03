@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/og-image.png",
+        url: "/images/logo.png",
         width: 1200,
         height: 630,
         alt: "MathieuDev — Web · Logiciels · Applications",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MathieuDev — Développement Web, Logiciels & Applications",
     description: "Développement sur mesure. Zéro frais de dev. Satisfaction garantie.",
-    images: ["/images/og-image.png"],
+    images: ["/images/logo.png"],
   },
   alternates: {
     canonical: "https://mathieudev.vercel.app",
@@ -130,6 +130,20 @@ export default function RootLayout({
   return (
     <html lang="fr" className="scroll-smooth">
       <head>
+        <link
+          rel="preload"
+          href="https://fonts.gstatic.com/s/syne/v22/8vIS7w4qzmVxsWxjBZRjr0FKM_04uQ.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
