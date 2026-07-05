@@ -81,7 +81,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative py-16">
+    <section id="contact" className="relative py-12">
       {/* Glow bg */}
       <div
         className="absolute inset-0 pointer-events-none"
@@ -101,11 +101,11 @@ export default function Contact() {
                 className="text-4xl md:text-5xl font-bold mb-4 leading-tight"
                 style={{ fontFamily: "Syne, system-ui, sans-serif" }}
               >
-                Ton projet mérite{" "}
-                <span className="gradient-text">d&apos;exister.</span>
+                Votre projet mérite{" "}
+              <span className="gradient-text">d&apos;exister.</span>
               </h2>
               <p className="text-[#888] text-lg leading-relaxed">
-                Tu as une idée? Un problème à résoudre? Un business à lancer? Écris-moi,
+                Vous avez une idée? Un problème à résoudre? Un business à lancer? Écrivez-moi,
                 c&apos;est gratuit, sans engagement, et la première conversation change
                 souvent tout.
               </p>
@@ -128,7 +128,7 @@ export default function Contact() {
             <div className="glass-card rounded-xl p-5 border-l-2 border-[#00aaff]">
               <p className="text-sm text-[#aaa] leading-relaxed">
                 <span className="text-white font-semibold">Mon engagement :</span> je
-                réponds à chaque message dans les 24 heures. Ton projet sera pris au
+                réponds à chaque message dans les 24 heures. Votre projet sera pris au
                 sérieux dès le premier échange.
               </p>
             </div>
@@ -136,14 +136,14 @@ export default function Contact() {
             {/* What to include */}
             <div>
               <p className="text-xs text-[#555] uppercase tracking-widest mb-3">
-                Dans ton message, tu peux inclure
+                Dans votre message, vous pouvez inclure
               </p>
               <ul className="flex flex-col gap-2">
                 {[
-                  "Une description de ton idée ou ton projet",
+                  "Une description de votre idée ou votre projet",
                   "Le type de solution souhaitée (web, app, logiciel, IA...)",
-                  "Ton délai approximatif si tu en as un",
-                  "Ton budget mensuel cible (même si c'est zéro pour l'instant)",
+                  "Votre délai approximatif si vous en avez un",
+                  "Votre budget mensuel cible (même si c'est zéro pour l'instant)",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm text-[#777]">
                     <span className="text-[#00aaff] mt-0.5 flex-shrink-0">›</span>
@@ -181,7 +181,7 @@ export default function Contact() {
                   className="text-lg font-bold text-white mb-1"
                   style={{ fontFamily: "Syne, system-ui, sans-serif" }}
                 >
-                  Envoie-moi un message
+                  Envoyez-moi un message
                 </h3>
 
                 {/* Honeypot — champ caché anti-spam, invisible pour un humain */}
@@ -204,7 +204,7 @@ export default function Contact() {
                 {/* Name */}
                 <div>
                   <label className="text-xs text-[#555] uppercase tracking-widest mb-1.5 block">
-                    Ton nom *
+                    Votre nom *
                   </label>
                   <div className="relative">
                     <User size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-[#444]" />
@@ -221,7 +221,7 @@ export default function Contact() {
                 {/* Email */}
                 <div>
                   <label className="text-xs text-[#555] uppercase tracking-widest mb-1.5 block">
-                    Ton courriel *
+                    Votre courriel *
                   </label>
                   <div className="relative">
                     <Mail size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-[#444]" />
@@ -252,7 +252,7 @@ export default function Contact() {
                 {/* Message */}
                 <div>
                   <label className="text-xs text-[#555] uppercase tracking-widest mb-1.5 block">
-                    Ton message *
+                    Votre message *
                   </label>
                   <div className="relative">
                     <MessageSquare
@@ -263,7 +263,7 @@ export default function Contact() {
                       value={form.message}
                       onChange={(e) => setForm({ ...form, message: e.target.value })}
                       rows={5}
-                      placeholder="Décris ton projet ou ton idée..."
+                      placeholder="Décrivez votre projet ou votre idée..."
                       className="w-full bg-[#0d0d0d] border border-[rgba(255,255,255,0.07)] rounded-lg pl-9 pr-4 py-3 text-sm text-white placeholder-[#444] focus:outline-none focus:border-[rgba(0,170,255,0.4)] transition-colors resize-none"
                     />
                   </div>

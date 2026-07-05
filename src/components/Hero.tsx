@@ -133,9 +133,9 @@ export default function Hero() {
             Je construis des <strong className="text-white">sites web</strong>,{" "}
             <strong className="text-white">logiciels</strong>,{" "}
             <strong className="text-white">applications</strong> et des{" "}
-            <strong className="text-white">systèmes IA</strong> sur mesure —
+            <strong className="text-white">systèmes IA</strong> sur mesure,
             sans frais de développement.{" "}
-            <span className="text-[#00aaff]">Tu paies seulement si t&apos;es satisfait.</span>
+            <span className="text-[#00aaff]">Vous payez seulement si vous êtes satisfait.</span>
           </p>
         </div>
 
@@ -146,7 +146,7 @@ export default function Hero() {
             style={{ background: "linear-gradient(135deg, #0055bb 0%, #00aaff 100%)" }}
             aria-label="Démarrer mon projet — aller à la section contact"
           >
-            Démarrer mon projet →
+            Démarrer votre projet →
           </a>
           <a
             href="#projets"

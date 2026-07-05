@@ -5,26 +5,6 @@ import { ExternalLink, Download, Globe, Lock } from "lucide-react";
 
 const projects = [
   {
-    name: "PattesQC",
-    logo: "/images/pattesqc-logo.png",
-    tagline: "La gestion de tes animaux, réinventée.",
-    description:
-      "Un SaaS complet pour les propriétaires d'animaux : dossiers médicaux, partage en famille, alertes d'animaux perdus, notifications intelligentes et assistance vétérinaire propulsée par l'IA.",
-    tech: ["React Native", "Supabase", "Stripe", "Firebase", "IA vétérinaire"],
-    status: "Disponible en téléchargement",
-    statusColor: "#00aaff",
-    cta: {
-      label: "Télécharger l'app",
-      href: "https://drive.google.com/file/d/1LPf0GBHtHJtgevb1z0IyvgZ770rk90qt/view?usp=drive_link",
-      icon: Download,
-      note: "APK Android — installation directe",
-    },
-    webHref: "https://pattesqc.vercel.app/",
-    maintenance: true,
-    gradient: "from-[#001a3a] to-[#0a0a0a]",
-    accentColor: "#0066cc",
-  },
-  {
     name: "Organix",
     logo: "/images/organix-logo.png",
     tagline: "Organise. Automatise. Gagne du temps.",
@@ -44,11 +24,31 @@ const projects = [
     gradient: "from-[#001a2e] to-[#0a0a0a]",
     accentColor: "#00aaaa",
   },
-];
+  {
+    name: "PattesQC",
+    logo: "/images/pattesqc-logo.png",
+    tagline: "La gestion de vos animaux, réinventée.",
+    description:
+      "Un SaaS complet pour les propriétaires d'animaux : dossiers médicaux, partage en famille, alertes d'animaux perdus, notifications intelligentes et assistance vétérinaire propulsée par l'IA.",
+    tech: ["React Native", "Supabase", "Stripe", "Firebase", "IA vétérinaire"],
+    status: "Disponible en téléchargement",
+    statusColor: "#00aaff",
+    cta: {
+      label: "Télécharger l'app",
+      href: "https://drive.google.com/file/d/1LPf0GBHtHJtgevb1z0IyvgZ770rk90qt/view?usp=drive_link",
+      icon: Download,
+      note: "APK Android — installation directe",
+    },
+    webHref: "https://pattesqc.vercel.app/",
+    maintenance: true,
+    gradient: "from-[#001a3a] to-[#0a0a0a]",
+    accentColor: "#0066cc",
+  },
+  ];
 
 export default function Projects() {
   return (
-    <section id="projets" className="relative py-28">
+    <section id="projets" className="relative py-12">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
@@ -60,7 +60,7 @@ export default function Projects() {
             Mes <span className="gradient-text">projets</span>
           </h2>
           <p className="text-[#888] text-lg max-w-xl mx-auto">
-            Des produits réels, fonctionnels, déployés. Pas des maquettes — des
+            Des produits réels, fonctionnels, déployés. Pas des maquettes, des
             applications que des gens utilisent.
           </p>
         </div>

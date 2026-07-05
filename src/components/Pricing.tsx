@@ -5,23 +5,23 @@ import { CheckCircle, Shield, Zap, TrendingUp } from "lucide-react";
 const steps = [
   {
     num: "01",
-    title: "On discute de ton projet",
-    desc: "Tu m'expliques ton idée, tes besoins, tes objectifs. C'est gratuit, sans engagement.",
+    title: "On discute de votre projet",
+    desc: "Vous m'expliquez votre idée, vos besoins, vos objectifs. C'est gratuit, sans engagement.",
   },
   {
     num: "02",
-    title: "Je construis pour toi",
-    desc: "Je développe ton projet sans te charger un seul dollar. Tu vois le résultat avant de décider quoi que ce soit.",
+    title: "Je construis pour vous",
+    desc: "Je développe votre projet sans vous charger un seul dollar. Vous voyez le résultat avant de décider quoi que ce soit.",
   },
   {
     num: "03",
-    title: "Tu l'essaies, t'en tombes en amour",
-    desc: "Si ça te plaît, tu t'abonnes au service mensuel. Sinon, tu repars. Zéro risque, zéro pression.",
+    title: "Vous l'essayez, vous en tombez en amour",
+    desc: "Si ça vous plaît, vous vous abonnez au service mensuel. Sinon, vous repartez. Zéro risque, zéro pression.",
   },
   {
     num: "04",
     title: "On grandit ensemble",
-    desc: "Ton abonnement couvre l'hébergement, les mises à jour, le support et l'évolution de ton produit.",
+    desc: "Votre abonnement couvre l'hébergement, les mises à jour, le support et l'évolution de votre produit.",
   },
 ];
 
@@ -56,9 +56,9 @@ export default function Pricing() {
             <span className="gradient-text">Zéro frais de dev.</span>
           </h2>
           <p className="text-[#888] text-lg max-w-2xl mx-auto">
-            Mon modèle est simple : je construis d&apos;abord, tu paies ensuite seulement
-            si le produit te convient. C&apos;est moi qui redouble d&apos;effort pour que tu
-            restes, pas toi qui prends un risque.
+            Mon modèle est simple : je construis d&apos;abord, vous payez ensuite seulement
+            si le produit vous convient. C&apos;est moi qui redouble d&apos;effort pour que vous
+            restiez, pas vous qui prenez un risque.
           </p>
         </div>
 
@@ -118,11 +118,11 @@ export default function Pricing() {
               className="text-3xl md:text-4xl font-bold text-white mb-3"
               style={{ fontFamily: "Syne, system-ui, sans-serif" }}
             >
-              Ton budget : <span className="gradient-text">0 $</span>
+              Votre budget : <span className="gradient-text">0 $</span>
             </h3>
             <p className="text-[#aaa] text-lg mb-8 max-w-xl mx-auto">
-              Tu peux lancer ton projet sans investissement initial. L&apos;abonnement
-              mensuel ne démarre que quand tu es prêt et satisfait!
+              Vous pouvez lancer votre projet sans investissement initial. L&apos;abonnement
+              mensuel ne démarre que quand vous êtes prêt et satisfait!
             </p>
 
             {/* Perks */}

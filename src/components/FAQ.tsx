@@ -7,17 +7,17 @@ const faqs = [
   {
     question: "Comment fonctionne le modèle sans frais de développement ?",
     answer:
-      "Tu ne paies rien pour la conception ni le développement de ton projet. Seulement un abonnement mensuel une fois le produit livré et fonctionnel. Si ça ne répond pas à tes attentes, tu n'as qu'à ne pas t'abonner, aucune facture, aucun engagement.",
+      "Vous ne payez rien pour la conception ni le développement de votre projet. Seulement un abonnement mensuel une fois le produit livré et fonctionnel. Si ça ne répond pas à vos attentes, vous n'avez qu'à ne pas vous abonner, aucune facture, aucun engagement.",
   },
   {
     question: "Combien de temps ça prend pour avoir mon projet ?",
     answer:
-      "Pour un projet simple (site vitrine, par exemple), compte 1 à 2 semaines. Les projets plus complexes (SaaS, intégration IA, applications) prennent plus de temps selon les fonctionnalités demandées. On en discute ensemble dès le premier échange.",
+      "Pour un projet simple (site vitrine, par exemple), comptez 1 à 2 semaines. Les projets plus complexes (SaaS, intégration IA, applications) prennent plus de temps selon les fonctionnalités demandées. On en discute ensemble dès le premier échange.",
   },
   {
     question: "Puis-je annuler mon abonnement en tout temps ?",
     answer:
-      "Oui, sans pénalité ni préavis. Si le service ne te convient plus, tu arrêtes simplement de payer, c'est aussi simple que ça.",
+      "Oui, sans pénalité ni préavis. Si le service ne vous convient plus, vous arrêtez simplement de payer, c'est aussi simple que ça.",
   },
   {
     question: "Quels types de projets acceptes-tu ?",
@@ -86,7 +86,7 @@ export default function FAQ() {
             className="text-3xl md:text-4xl font-bold mb-4"
             style={{ fontFamily: "Syne, system-ui, sans-serif" }}
           >
-            Tu te poses des <span className="gradient-text">questions ?</span>
+            Vous vous posez des <span className="gradient-text">questions ?</span>
           </h2>
           <p className="text-[#888] max-w-lg mx-auto">
             Voici les réponses aux questions qu&apos;on me pose le plus

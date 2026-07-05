@@ -58,9 +58,9 @@ export default function Navbar() {
             href="#contact"
             className="btn-primary ml-2 px-5 py-2 rounded-md text-sm font-semibold text-white"
             style={{ background: "linear-gradient(135deg, #0066cc 0%, #00aaff 100%)" }}
-            aria-label="Démarrer un projet — aller au formulaire de contact"
+            aria-label="Démarrer votre projet — aller au formulaire de contact"
           >
-            Démarrer un projet
+            Démarrer votre projet
           </a>
         </nav>
 
@@ -101,9 +101,9 @@ export default function Navbar() {
             onClick={() => setOpen(false)}
             className="text-center py-2 rounded-md text-sm font-semibold text-white"
             style={{ background: "linear-gradient(135deg, #0066cc 0%, #00aaff 100%)" }}
-            aria-label="Démarrer un projet — aller au formulaire de contact"
+            aria-label="Démarrer votre projet — aller au formulaire de contact"
           >
-            Démarrer un projet
+            Démarrer votre projet
           </a>
         </nav>
       </div>

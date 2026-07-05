@@ -15,7 +15,7 @@ const techStack = [
 
 export default function TechStack() {
   return (
-    <section className="relative py-20" aria-label="Technologies maîtrisées">
+    <section className="relative py-10" aria-label="Technologies maîtrisées">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <span className="code-tag block mb-3" aria-hidden="true">// mon arsenal</span>

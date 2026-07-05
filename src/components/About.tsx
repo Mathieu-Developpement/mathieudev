@@ -57,37 +57,36 @@ export default function About() {
                 className="text-3xl md:text-4xl font-bold mb-4 leading-tight"
                 style={{ fontFamily: "Syne, system-ui, sans-serif" }}
               >
-                De l&apos;autodidacte au{" "}
-                <span className="gradient-text">bâtisseur de solutions.</span>
+                Une expertise{" "}
+                <span className="gradient-text">bâtie sur l&apos;expérience</span>
               </h2>
             </div>
 
             <div className="flex flex-col gap-4 text-[#999] text-base leading-relaxed">
               <p>
-                Je n&apos;ai pas de diplôme en informatique, j&apos;ai appris
-                en ligne, par moi-même, en construisant de vrais projets
-                plutôt qu&apos;en suivant un programme. Tout a commencé il y a
-                plus de 10 ans avec un petit jeu 2D, simplement pour
-                comprendre comment ça fonctionnait.
+                Depuis plus de dix ans, je conçois des projets numériques qui répondent à de véritables besoins.
+                Chaque réalisation a été l&apos;occasion d&apos;approfondir mes compétences, d&apos;expérimenter
+                de nouvelles approches et de développer une vision concrète du développement logiciel et du commerce numérique.
               </p>
               <p>
-                J&apos;ai repris avec deux boutiques
-                Shopify (Tendance Express et Onyx), aujourd&apos;hui fermées,
-                mais qui m&apos;ont appris l&apos;essentiel : optimisation
-                SEO, structure d&apos;une boutique en ligne, commerce
-                international et logistique. Chaque projet, même terminé,
-                m&apos;a rendu meilleur pour le suivant.
+                Mon parcours a débuté avec la création d&apos;un jeu 2D, puis s&apos;est poursuivi avec le lancement
+                de deux boutiques Shopify, Tendance Express et Onyx. Ces projets m&apos;ont permis d&apos;acquérir
+                une solide expérience en développement web, en référencement (SEO), en expérience utilisateur,
+                en commerce électronique, en logistique et en optimisation des performances.
               </p>
               <p>
-                Ça m&apos;a mené à PattesQC, mon premier vrai SaaS, un projet
-                personnel que j&apos;ai volontairement gardé hors des stores
-                Android et Apple pour me concentrer sur une chose : lancer
-                MathieuDev sérieusement.
+                J&apos;ai ensuite développé PattesQC, une plateforme SaaS conçue pour répondre à un besoin précis.
+                Ce projet m&apos;a permis d&apos;approfondir la conception d&apos;applications web modernes,
+                la gestion des données, l&apos;automatisation des processus et le développement de solutions évolutives.
+              </p>
+              <p>
+                Aujourd&apos;hui, à travers MathieuDev, je mets cette expertise au service des entreprises,
+                des organismes et des entrepreneurs qui souhaitent transformer leurs idées en solutions numériques performantes.
               </p>
               <p className="text-white font-medium">
-                Aujourd&apos;hui, je mets cette expérience à ton service : pas
-                de jargon, pas de promesses vides. Juste quelqu&apos;un qui
-                sait construire, parce qu&apos;il a appris en construisant.
+                Ma philosophie est simple : comprendre vos objectifs, concevoir des outils fiables et offrir
+                un accompagnement transparent à chaque étape. Pas de solutions génériques ni de promesses irréalistes :
+                seulement des réalisations réfléchies, conçues pour être durables, efficaces et adaptées à vos besoins.
               </p>
             </div>
 

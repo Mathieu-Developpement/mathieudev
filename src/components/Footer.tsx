@@ -52,9 +52,6 @@ export default function Footer() {
           <p className="text-xs text-[#777]">
             © {new Date().getFullYear()} MathieuDev. Tous droits réservés.
           </p>
-          <p className="text-xs text-[#777] font-mono">
-            Construit avec Next.js · Hébergé sur Vercel
-          </p>
         </div>
       </div>
     </footer>

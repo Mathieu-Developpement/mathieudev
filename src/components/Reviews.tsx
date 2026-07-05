@@ -236,7 +236,7 @@ export default function Reviews() {
   };
 
   return (
-    <section id="avis" className="relative py-28 bg-grid">
+    <section id="avis" className="relative py-12 bg-grid">
       <div
         className="absolute top-0 left-0 right-0 h-32 pointer-events-none"
         style={{ background: "linear-gradient(to bottom, #0a0a0a, transparent)" }}
@@ -251,7 +251,7 @@ export default function Reviews() {
             Ce que disent <span className="gradient-text">mes clients</span>
           </h2>
           <p className="text-[#888] text-lg max-w-xl mx-auto">
-            Des gens qui ont pris le risque zéro — et qui ne l&apos;ont pas regretté.
+            Des gens qui ont pris le risque zéro et qui ne l&apos;ont pas regretté.
           </p>
         </div>
 
@@ -284,7 +284,7 @@ export default function Reviews() {
               style={{ background: "linear-gradient(135deg, #0055bb 0%, #00aaff 100%)" }}
               aria-label="Laisser mon avis sur MathieuDev"
             >
-              Laisser mon avis →
+              Laisser votre avis →
             </button>
           )}
         </div>
