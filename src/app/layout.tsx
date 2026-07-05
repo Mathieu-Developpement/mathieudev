@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     canonical: "https://www.mathieudev.com",
   },
   verification: {
-    google: "BzJXKCeDO6M0u2Fw7dlwzcX0R57Mkj2KKYdYUAYeu5I",
+    google: ["BzJXKCeDO6M0u2Fw7dlwzcX0R57Mkj2KKYdYUAYeu5I", "PSJ5w403UHrT5PTgRmWP4vSedOeVWO1SdY0EKrm2qyU"],
   },
   robots: {
     index: true,
