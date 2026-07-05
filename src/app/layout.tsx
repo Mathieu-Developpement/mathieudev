@@ -3,7 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mathieudev.vercel.app"),
+  metadataBase: new URL("https://www.mathieudev.com"),
   title: {
     default: "MathieuDev — Développement Web, Logiciels & Applications",
     template: "%s | MathieuDev",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "MathieuDev — Développement Web, Logiciels & Applications",
     description:
       "Développement sur mesure. Zéro frais de dev. Abonnement mensuel seulement. Satisfaction garantie.",
-    url: "https://mathieudev.vercel.app",
+    url: "https://www.mathieudev.com",
     siteName: "MathieuDev",
     locale: "fr_CA",
     type: "website",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     images: ["/images/logo.png"],
   },
   alternates: {
-    canonical: "https://mathieudev.vercel.app",
+    canonical: "https://www.mathieudev.com",
   },
   verification: {
     google: "BzJXKCeDO6M0u2Fw7dlwzcX0R57Mkj2KKYdYUAYeu5I",
@@ -92,7 +92,7 @@ const jsonLd = {
   name: "MathieuDev",
   description:
     "Développeur freelance spécialisé en sites web, logiciels, applications mobiles, SaaS et intégration IA. Aucun frais de développement — abonnement mensuel seulement.",
-  url: "https://mathieudev.vercel.app",
+  url: "https://www.mathieudev.com",
   email: "mathieu.dev@hotmail.com",
   areaServed: ["CA", "Worldwide"],
   availableLanguage: ["French", "English"],
