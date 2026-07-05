@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/logo.png",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "MathieuDev — Web · Logiciels · Applications",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MathieuDev — Développement Web, Logiciels & Applications",
     description: "Développement sur mesure. Zéro frais de dev. Satisfaction garantie.",
-    images: ["/images/logo.png"],
+    images: ["/images/og-image.png"],
   },
   alternates: {
     canonical: "https://www.mathieudev.com",
