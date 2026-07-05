@@ -41,7 +41,7 @@ const projects = [
     },
     webHref: null,
     maintenance: false,
-    gradient: "from-[#001a1a] to-[#0a0a0a]",
+    gradient: "from-[#001a2e] to-[#0a0a0a]",
     accentColor: "#00aaaa",
   },
 ];
@@ -89,7 +89,7 @@ export default function Projects() {
                       src={project.logo}
                       alt={project.name}
                       fill
-                      className="object-contain"
+                      className={`object-contain ${project.name === "Organix" ? "brightness-0 invert" : ""}`}
                     />
                   </div>
                 </div>
