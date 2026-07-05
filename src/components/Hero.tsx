@@ -106,7 +106,7 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center flex flex-col items-center gap-8">
-        <span className="code-tag animate-pulse-slow" aria-hidden="true">// mathieudev.com;</span>
+        <span className="code-tag animate-pulse-slow" aria-hidden="true">// mathieudev.com</span>
 
         <div className="animate-float" style={{ animationDelay: "0s" }}>
           <Image
