@@ -11,11 +11,11 @@ const steps = [
   {
     num: "02",
     title: "Je construis pour vous",
-    desc: "Je développe votre projet sans vous charger un seul dollar. Vous voyez le résultat avant de décider quoi que ce soit.",
+    desc: "Je développe votre projet sans que cela ne vous coûte un sous.",
   },
   {
     num: "03",
-    title: "Vous l'essayez, vous en tombez en amour",
+    title: "Vous l'essayez, vous tombez en amour",
     desc: "Si ça vous plaît, vous vous abonnez au service mensuel. Sinon, vous repartez. Zéro risque, zéro pression.",
   },
   {
@@ -53,12 +53,11 @@ export default function Pricing() {
             style={{ fontFamily: "Syne, system-ui, sans-serif" }}
           >
             Zéro risque.{" "}
-            <span className="gradient-text">Zéro frais de dev.</span>
+            <span className="gradient-text">Zéro frais de développement</span>
           </h2>
           <p className="text-[#888] text-lg max-w-2xl mx-auto">
-            Mon modèle est simple : je construis d&apos;abord, vous payez ensuite seulement
-            si le produit vous convient. C&apos;est moi qui redouble d&apos;effort pour que vous
-            restiez, pas vous qui prenez un risque.
+            Je produit d'abord, vous payer seulement si ça vous convient.
+            Le risque est pour moi, l'assurance pour vous.
           </p>
         </div>
 

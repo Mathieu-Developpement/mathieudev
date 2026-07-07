@@ -33,7 +33,7 @@ const fakeReviews: Review[] = [
     id: -4,
     name: "Antoine Bergeron",
     role: "Directeur IT, LogiMax",
-    message: "Sceptique au départ, mais le modèle sans frais de dev m'a convaincu d'essayer. Le résultat est au-delà des attentes. Notre logiciel de gestion interne est maintenant notre meilleur atout.",
+    message: "Sceptique au départ, mais le modèle sans frais de développement m'a convaincu d'essayer. Le résultat est au-delà des attentes. Notre logiciel de gestion interne est maintenant notre meilleur atout.",
     rating: 5,
     created_at: "2025-02-05",
   },

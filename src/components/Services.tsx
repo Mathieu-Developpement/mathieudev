@@ -14,7 +14,7 @@ const services = [
     icon: Cpu,
     title: "Logiciels sur mesure",
     description:
-      "Des outils métier taillés exactement à tes besoins. Automatisations, tableaux de bord, systèmes de gestion internes.",
+      "Des outils métier taillés exactement à vos besoins. Automatisations, tableaux de bord, systèmes de gestion internes.",
     tags: ["TypeScript", "Node.js", "Supabase"],
   },
   {
@@ -35,14 +35,14 @@ const services = [
     icon: Bot,
     title: "Intégration IA",
     description:
-      "J'intègre l'intelligence artificielle dans tes systèmes existants : chatbots, assistants, analyse de données, génération de contenu.",
+      "J'intègre l'intelligence artificielle dans vos systèmes existants : chatbots, assistants, analyse de données, génération de contenu.",
     tags: ["OpenAI", "Claude API", "LLM"],
   },
   {
     icon: Zap,
     title: "IA personnalisée",
     description:
-      "Un agent IA entraîné sur ton entreprise, qui répond à tes clients 24/7, qualifie les leads et s'adapte à ta façon de parler.",
+      "Un agent IA entraîné sur votre entreprise, qui répond à tes clients 24/7, qualifie les leads et s'adapte à ta façon de parler.",
     tags: ["Fine-tuning", "RAG", "Agents"],
   },
 ];

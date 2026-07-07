@@ -63,27 +63,27 @@ export default function About() {
             </div>
 
             <div className="flex flex-col gap-4 text-[#999] text-base leading-relaxed">
-              <p>
+              <p className="text-justify">
                 Depuis plus de dix ans, je conçois des projets numériques qui répondent à de véritables besoins.
                 Chaque réalisation a été l&apos;occasion d&apos;approfondir mes compétences, d&apos;expérimenter
                 de nouvelles approches et de développer une vision concrète du développement logiciel et du commerce numérique.
               </p>
-              <p>
+              <p className="text-justify">
                 Mon parcours a débuté avec la création d&apos;un jeu 2D, puis s&apos;est poursuivi avec le lancement
                 de deux boutiques Shopify, Tendance Express et Onyx. Ces projets m&apos;ont permis d&apos;acquérir
                 une solide expérience en développement web, en référencement (SEO), en expérience utilisateur,
                 en commerce électronique, en logistique et en optimisation des performances.
               </p>
-              <p>
+              <p className="text-justify">
                 J&apos;ai ensuite développé PattesQC, une plateforme SaaS conçue pour répondre à un besoin précis.
                 Ce projet m&apos;a permis d&apos;approfondir la conception d&apos;applications web modernes,
                 la gestion des données, l&apos;automatisation des processus et le développement de solutions évolutives.
               </p>
-              <p>
+              <p className="text-justify">
                 Aujourd&apos;hui, à travers MathieuDev, je mets cette expertise au service des entreprises,
                 des organismes et des entrepreneurs qui souhaitent transformer leurs idées en solutions numériques performantes.
               </p>
-              <p className="text-white font-medium">
+              <p className="text-white font-medium text-justify">
                 Ma philosophie est simple : comprendre vos objectifs, concevoir des outils fiables et offrir
                 un accompagnement transparent à chaque étape. Pas de solutions génériques ni de promesses irréalistes :
                 seulement des réalisations réfléchies, conçues pour être durables, efficaces et adaptées à vos besoins.
