@@ -22,7 +22,7 @@ const projects = [
   {
     name: "SoumiPro",
     logo: "/images/soumipro-logo.png",
-    tagline: "Des soumissions professionnelles en secondes, propulsées par l'IA.",
+    tagline: "Soumissions professionnelles en quelques secondes, propulsées par l'IA.",
     description: "SoumiPro est une plateforme SaaS conçue pour les entrepreneurs et travailleurs autonomes du Québec. Grâce à l'intelligence artificielle, elle génère automatiquement des soumissions professionnelles et personnalisées à partir de quelques informations saisies. Fini les heures perdues à rédiger des devis. SoumiPro analyse votre contexte, structure votre offre et produit un document prêt à envoyer en quelques secondes.",
     tech: ["Next.js", "Supabase", "Google Gemini", "Stripe", "IA générative"],
     status: "En ligne",
