@@ -25,20 +25,7 @@ export default function About() {
           {/* Photo */}
           <div className="flex justify-center lg:justify-start">
             <div className="relative w-64 h-64 lg:w-80 lg:h-80 flex-shrink-0">
-              {/* Glow ring */}
-              <div
-                className="absolute inset-0 rounded-2xl"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #00aaff, #003a8c, #00aaff)",
-                  backgroundSize: "200% 200%",
-                  animation: "borderRotate 4s linear infinite",
-                  padding: "2px",
-                }}
-              >
-                <div className="w-full h-full rounded-2xl bg-[#0a0a0a]" />
-              </div>
-              <div className="absolute inset-[2px] rounded-2xl overflow-hidden glow-blue-sm">
+              <div className="absolute inset-0 rounded-2xl overflow-hidden glow-blue-sm">
                 <Image
                   src="/images/profile.jpg"
                   alt="Mathieu — fondateur de MathieuDev"

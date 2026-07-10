@@ -11,8 +11,7 @@ const techStack = [
   { name: "Vercel", icon: "/images/tech/vercel.svg", label: "Déploiement", invert: true },
   { name: "Node.js", icon: "/images/tech/nodejs.svg", label: "Runtime" },
   { name: "Tailwind", icon: "/images/tech/tailwind.svg", label: "CSS" },
-  { name: "Shopify", icon: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg", label: "E-commerce" },
-];
+{ name: "Shopify", icon: "/images/tech/shopify.svg", label: "E-commerce" },];
 
 export default function TechStack() {
   return (

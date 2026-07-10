@@ -72,15 +72,14 @@ body {
   position: absolute;
   inset: -1px;
   border-radius: inherit;
-  background: linear-gradient(135deg, #00aaff, #003a8c, #00aaff);
-  background-size: 200% 200%;
+  background: conic-gradient(#00aaff, #003a8c, #00aaff);
   animation: borderRotate 4s linear infinite;
   z-index: -1;
+  will-change: transform;
 }
 @keyframes borderRotate {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .code-tag {
