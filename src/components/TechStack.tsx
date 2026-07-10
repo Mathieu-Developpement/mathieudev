@@ -1,16 +1,17 @@
 "use client";
 
 const techStack = [
-  { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", label: "Éditeur" },
-  { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", label: "UI" },
-  { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", label: "Framework" },
-  { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", label: "Langage" },
-  { name: "Supabase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg", label: "Base de données" },
-  { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg", label: "Backend" },
-  { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", label: "Versioning", invert: true },
-  { name: "Vercel", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg", label: "Déploiement", invert: true },
-  { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", label: "Runtime" },
-  { name: "Tailwind", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg", label: "CSS" },
+  { name: "VS Code", icon: "/images/tech/vscode.svg", label: "Éditeur" },
+  { name: "React", icon: "/images/tech/react.svg", label: "UI" },
+  { name: "Next.js", icon: "/images/tech/nextjs.svg", label: "Framework" },
+  { name: "TypeScript", icon: "/images/tech/typescript.svg", label: "Langage" },
+  { name: "Supabase", icon: "/images/tech/supabase.svg", label: "Base de données" },
+  { name: "Firebase", icon: "/images/tech/firebase.svg", label: "Backend" },
+  { name: "GitHub", icon: "/images/tech/github.svg", label: "Versioning", invert: true },
+  { name: "Vercel", icon: "/images/tech/vercel.svg", label: "Déploiement", invert: true },
+  { name: "Node.js", icon: "/images/tech/nodejs.svg", label: "Runtime" },
+  { name: "Tailwind", icon: "/images/tech/tailwind.svg", label: "CSS" },
+  { name: "Shopify", icon: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Shopify_logo_2018.svg", label: "E-commerce" },
 ];
 
 export default function TechStack() {
@@ -44,9 +45,9 @@ export default function TechStack() {
                 alt={tech.name}
                 width={32}
                 height={32}
-                className={`w-8 h-8 object-contain transition-transform duration-300 group-hover:scale-110 ${
-                  tech.invert ? "brightness-0 invert opacity-80" : ""
-                }`}
+                className={`object-contain transition-transform duration-300 group-hover:scale-110 ${
+                  tech.name === "Shopify" ? "w-16 h-8" : "w-8 h-8"
+                } ${tech.name === "Shopify" ? "[filter:invert(52%)_sepia(98%)_saturate(400%)_hue-rotate(93deg)_brightness(95%)]" : tech.invert ? "brightness-0 invert opacity-80" : ""}`}
                 onError={(e) => {
                   (e.target as HTMLImageElement).style.display = "none";
                 }}
