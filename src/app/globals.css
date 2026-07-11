@@ -127,3 +127,14 @@ body {
   50% { transform: translateY(-10px); }
 }
 .animate-float { animation: float 6s ease-in-out infinite; }
+
+/* Logos projet — blanc sur PC, couleurs originales sur mobile */
+.project-logo-invert {
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 767px) {
+  .project-logo-invert {
+    filter: none;
+  }
+}
