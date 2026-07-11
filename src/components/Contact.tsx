@@ -69,6 +69,15 @@ export default function Contact() {
         templateParams,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       );
+
+      // Meta Pixel — événement Lead
+      if (typeof window !== "undefined" && (window as any).fbq) {
+        (window as any).fbq("track", "Lead", {
+          content_name: "Formulaire de contact",
+          content_category: "Contact",
+        });
+      }
+
       setStatus("sent");
       setForm({ name: "", email: "", subject: "", message: "" });
 
