@@ -137,7 +137,4 @@ body {
   .project-logo-invert {
     filter: none;
   }
-  .project-logo-panel {
-    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%) !important;
-  }
 }
