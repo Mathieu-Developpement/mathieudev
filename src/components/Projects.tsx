@@ -54,7 +54,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
   const i = index;
   return (
     <div className={`glass-card rounded-2xl overflow-hidden flex flex-col md:flex-row ${i % 2 === 1 ? "md:flex-row-reverse" : ""} hover:border-[rgba(0,170,255,0.25)] transition-all duration-500 group`}>
-      <div className={`flex-shrink-0 w-full md:w-64 lg:w-80 flex items-center justify-center p-10 bg-gradient-to-br ${project.gradient}`}
+      <div className={`project-logo-panel flex-shrink-0 w-full md:w-64 lg:w-80 flex items-center justify-center p-10 bg-gradient-to-br ${project.gradient}`}
         style={{
           borderRight: i % 2 === 0 ? "1px solid rgba(0,170,255,0.08)" : "none",
           borderLeft: i % 2 === 1 ? "1px solid rgba(0,170,255,0.08)" : "none",
