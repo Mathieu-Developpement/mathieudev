@@ -1,15 +1,16 @@
 import { createClient } from "@supabase/supabase-js";
 import { NextResponse } from "next/server";
 
-// Client admin — utilise la clé service_role, jamais exposée au navigateur.
-// Cette route est le SEUL endroit du site qui écrit dans project_leads.
-const supabaseAdmin = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-);
-
 export async function POST(request: Request) {
   try {
+    // Client admin créé ici (et non au niveau du module) pour éviter que
+    // Next.js tente de l'instancier pendant l'étape de build, avant que les
+    // variables d'environnement de production ne soient garanties disponibles.
+    const supabaseAdmin = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.SUPABASE_SERVICE_ROLE_KEY!
+    );
+
     const payload = await request.json();
 
     // Validation minimale — on refuse tout payload qui n'a pas au moins un id et un courriel
