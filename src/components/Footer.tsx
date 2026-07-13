@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ManageCookiesLink from "./ManageCookiesLink";
 
 const links = [
   { label: "Services", href: "#services" },
@@ -52,6 +53,15 @@ export default function Footer() {
           <p className="text-xs text-[#777]">
             © {new Date().getFullYear()} MathieuDev. Tous droits réservés.
           </p>
+          <div className="flex items-center gap-4">
+            <a
+              href="/politique-de-confidentialite"
+              className="text-xs text-[#777] hover:text-[#00aaff] transition-colors"
+            >
+              Politique de confidentialité
+            </a>
+            <ManageCookiesLink />
+          </div>
         </div>
       </div>
     </footer>

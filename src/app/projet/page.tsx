@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import ProjectForm from "@/components/ProjectForm";
+import ManageCookiesLink from "@/components/ManageCookiesLink";
 
 export const metadata: Metadata = {
   title: "Démarrer votre projet",
@@ -34,10 +35,19 @@ export default function ProjetPage() {
       </section>
 
       {/* Footer minimal — confiance, sans liens de navigation */}
-      <footer className="relative z-10 text-center pb-10">
+      <footer className="relative z-10 text-center pb-10 flex flex-col items-center gap-2">
         <p className="text-xs text-[#444]">
           Zéro frais de développement · Vous payez seulement si vous êtes satisfait
         </p>
+        <div className="flex items-center gap-4">
+          <a
+            href="/politique-de-confidentialite"
+            className="text-xs text-[#555] hover:text-[#00aaff] transition-colors underline underline-offset-2"
+          >
+            Politique de confidentialité
+          </a>
+          <ManageCookiesLink className="text-xs text-[#555] hover:text-[#00aaff] transition-colors underline underline-offset-2" />
+        </div>
       </footer>
     </main>
   );
